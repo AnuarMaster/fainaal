@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub</title>
+    <link rel="stylesheet" href="css/styles1.css"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="index.html"><img class="logo" src="images/logo-no-background.png"></a>
+        <a href="Map.html"><i class="fa fa-fw fa-search"></i>Browse Events</a>
+        <a href="reg.html"><i class="fas fa-pen	"></i>Create Event</a>
+        <a href="contacts.html"><i class="fas fa-info	"></i>Contacts</a>
+    </div>
+
+    <div class="container">
+        <div class="right-section">
+            <div id="map" style="width: 100%; height: 800px;"></div>
+        </div>
+        <div class="events-section">
+            <h2 id="events-header">List of Events</h2>
+            <ul id="events-list" style="display: none;">
+                <li>Fast & Furious 10. 10.06.2023</li>
+                <li>ZAZ in Astana! 19.06.2023</li>
+                <li>Danial StandUp Concert. 20.06.2023</li>
+                <li>Championship of the World in hand-to-hand combat. 28.06.2023</li>
+                <li>Barbie. 30.06.2023</li>
+                <li>Night in Museum. 03.07.2023</li>
+                <li>Satisfaction Fest! 15.07.2023</li>
+                <li>Lion King in theatre. 19.07.2023</li>
+                <li>Timur's birthday! 31.08.2023</li>
+            </ul>
+        </div>
+        <div class="form-section">
+            <h1>Enter Your Information</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div><br>
+                <div class="form-group">
+                    <label for="name">Event Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/map.js"></script>
+</body>
+</html>

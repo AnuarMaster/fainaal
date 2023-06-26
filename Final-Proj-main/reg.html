@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="css/reg.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png"> 
+</head>
+<body>
+  <div class="navbar" id="myNavbar">
+    <a href="index.html"><img class="logo" src="images/logo-no-background.png"></a>
+    <a href="Map.html"><i class="fa fa-fw fa-search"></i>Browse Events</a>
+    <a href="reg.html"><i class="fas fa-pen	"></i>Create Event</a>
+    <a href="contacts.html"><i class="fas fa-info	"></i>Contacts</a>
+</div>
+<div class="container">
+  <form id="registrationForm">
+      <h2>Event Registration</h2>
+
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br>
+
+      <label for="phone">Phone:</label><br>
+      <input type="tel" id="phone" name="phone" required><br>
+
+      <label for="address">Address:</label><br>
+      <textarea id="address" name="address" required></textarea><br>
+
+      <button class="button"><span>Register </span></button>
+    </form>
+</div>
+  <script src="js/reg.js"></script>
+</body>
+</html>

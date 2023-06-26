@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EventHub</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">    
+</head>
+
+<body>
+  <body>
+    <div class="navbar" id="myNavbar">
+      <a href="index.html"><img class="logo" src="images/logo-no-background.png"></a>
+      <a href="Map.html"><i class="fa fa-fw fa-search"></i>Browse Events</a>
+      <a href="reg.html"><i class="fas fa-pen	"></i>Create Event</a>
+      <a href="contacts.html"><i class="fas fa-info	"></i>Contacts</a>
+      <a href="javascript:void(0);" class="icon total-price" onclick="myFunction()">
+        <i class="fas fa-ticket-alt"></i>
+        <span class="badge badge-danger">Total: $0</span>
+    </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">No items selected</a>
+      </div>
+    </div>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container text-center transparent-header">
+            <h1 class="display-4">Start your journey now!</h1>
+            <p class="lead">Find events, sport matches, meetups and more happening in your city.</p>
+            <form class="form-inline justify-content-center">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search events" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-5 kraska">
+             <h1 class="display-4">Upcoming Events</h1>
+          </div>
+        </div>
+        <div class="row" id="events-container"></div>
+      </div>
+    </section>
+    
+    
+
+    <footer class="bg-dark py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 EventHub. All Rights Reserved.</p>
+        </div>
+    </footer>
+<script src="js/index.js"></script>
+</body>
+
+</html>
